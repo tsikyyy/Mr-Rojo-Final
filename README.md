@@ -1,2 +1,8 @@
 # Mr-Rojo-Final
-ETU3637-ETU3616-ETU3603-ETU3513
+ Noms et prénoms : 
+ ETU3513 - ANDRIAMIHAINGO Mabo Fémidah
+ ETU3603 - RANAIVOSOLOFO Enrick
+ ETU3616 - RANDRIANJATOVO Tahiry Manantsiory
+ ETU3637 - RAZAKAMBOLOLONA Tsiky Ny Aina
+
+ Thème : Projet de simulation de gestion de garage.
