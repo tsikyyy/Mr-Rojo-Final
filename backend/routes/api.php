@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\VoitureController;
+use App\Http\Controllers\FirebaseTestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,6 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::post('/voitures', [VoitureController::class, 'store']);
 });
+
+// Firebase Test Route (debug only - remove in production)
+Route::get('/firebase-test', [FirebaseTestController::class, 'test']);
