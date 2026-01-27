@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('utilisateurs', function (Blueprint $table) {
             $table->id();
+
+            // Champs nécessaires à l'authentification
+            $table->string('email')->unique();
+            $table->string('mot_de_passe');
+
             $table->timestamps();
         });
     }
