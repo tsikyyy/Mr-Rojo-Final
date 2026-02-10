@@ -1,39 +1,84 @@
+# Node Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# PHP Composer
+vendor/
+composer.lock
+
 # Environment variables
 .env
 .env.local
 .env.*.local
-.env.production
 
-# Credentials and secrets
-backend/config/firebase-credentials.json
-
-# Dependencies
-node_modules/
-vendor/
-
-# Laravel cache and logs
-storage/logs/
-storage/framework/cache/
-storage/framework/sessions/
-storage/framework/views/
-bootstrap/cache/
-
-# IDE
+# IDE & Editor
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
+*.iml
+.sublime-project
+.sublime-workspace
 
-# Build files
-*.log
+# Build outputs
 dist/
 build/
+out/
 
-# Testing
-coverage/
-.phpunit.result.cache
+# Generated files
+*.apk
+*.ipa
+*.app
+.gradle/
+.expo/
+
+# Database
+*.sqlite
+*.sqlite3
+database.db
+
+# Logs
+logs/
+*.log
+npm-logs/
+
+# OS files
+Thumbs.db
+.Thumbs.db
+
+# Laravel specific
+public/storage
+storage/logs/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Godot
+.godot/
+*.translation
+user_data/
+export/
+
+# Temporary files
+*.tmp
+.tmp/
+temp/
+
+# ESLint/Prettier cache
+.eslintcache
+.prettierignore
+
+# Docker volumes
+mysql_data/
+postgres_data/
+
+# Expo
+.env.local
+
+# Cache
+.cache/
+*.cache

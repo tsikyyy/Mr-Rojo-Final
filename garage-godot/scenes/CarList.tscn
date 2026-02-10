@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cvgp3f8d8u7b7"]
+
+[node name="CarListUI" type="Control" unique_id=2026880802]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Panel" type="Panel" parent="." unique_id=1308124919]
+layout_mode = 0
+offset_left = 333.0
+offset_top = 74.0
+offset_right = 767.0
+offset_bottom = 583.0
+
+[node name="Titre" type="Label" parent="Panel" unique_id=1926328253]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 33.0
+offset_right = 402.0
+offset_bottom = 187.0
+text = "En attente"
+horizontal_alignment = 2
+
+[node name="CarList" type="VBoxContainer" parent="Panel" unique_id=1562280142]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 43.0
+scale = Vector2(1.1891105, 1.4023193)
+alignment = 1
+
+[node name="CarButton1" type="Button" parent="Panel/CarList" unique_id=910287941]
+layout_mode = 2
+button_mask = 0
+text = "Voiture A"
+
+[node name="Carbutton2" type="Button" parent="Panel/CarList" unique_id=1175345076]
+layout_mode = 2
+text = "Voiture B"
+
+[node name="CarButton3" type="Button" parent="Panel/CarList" unique_id=953023543]
+layout_mode = 2
+text = "Voiture C"
