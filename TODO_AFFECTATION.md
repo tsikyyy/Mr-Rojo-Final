@@ -6,9 +6,13 @@
 
 ## 📊 Synthèse des Affectations
 
-| Membre | Tâches Assignées | Complétées | En Cours | À Faire | % Avancement |
-|--------|------------------|-----------|----------|---------|-------------|
-| **ETU3637** | 45 | 32 | 0 | 13 | **71%** |
+| Membre | Rôle | Tâches Assignées | Complétées | En Cours | À Faire | % Avancement |
+|--------|------|------------------|-----------|----------|---------|-------------|
+| **ETU3637** | Lead Dev - Auth & Security | 11 | 8 | 0 | 3 | **73%** |
+| **ETU3616** | Mobile - Repairs Manager | 12 | 9 | 0 | 3 | **75%** |
+| **ETU3603** | Backend - Payments & Notif | 11 | 8 | 0 | 3 | **73%** |
+| **ETU3513** | Frontend - UI & Database | 11 | 7 | 0 | 4 | **64%** |
+| **TOTAL** | **Équipe Complète** | **45** | **32** | **0** | **13** | **71%** |
 
 ---
 
@@ -36,41 +40,41 @@
 ### Gestion Réparations (70% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 10 | Repairs | Liste voitures depuis BD | **ETU3637** | ✅ Done | 40min | 0 | 100% |
-| 11 | Repairs | Statuts avec badges | **ETU3637** | ✅ Done | 25min | 0 | 100% |
-| 12 | Repairs | Prix en Ariary | **ETU3637** | ✅ Done | 20min | 0 | 100% |
-| 13 | Repairs | Filtres par statut | **ETU3637** | ✅ Done | 30min | 0 | 100% |
-| 14 | Repairs | Ajouter réparation | **ETU3637** | ✅ Done | 35min | 0 | 100% |
-| 15 | Repairs | 8 types réparations BD | **ETU3637** | ✅ Done | 25min | 0 | 100% |
-| 16 | Repairs | Prix estimé automatique | **ETU3637** | ✅ Done | 30min | 0 | 100% |
-| 17 | Repairs | Photos des pannes | **ETU3637** | ⏳ TODO | 120min | 120 | 0% |
-| 18 | Repairs | Détails temps réel | **ETU3637** | ✅ Done | 40min | 0 | 100% |
-| 19 | Repairs | Timeline réparations | **ETU3637** | ✅ Done | 35min | 0 | 100% |
-| 20 | Repairs | Devis PDF | **ETU3637** | ⏳ TODO | 90min | 90 | 0% |
-| 21 | Repairs | Historique complet | **ETU3637** | ⏳ TODO | 60min | 60 | 0% |
+| 10 | Repairs | Liste voitures depuis BD | **ETU3616** | ✅ Done | 40min | 0 | 100% |
+| 11 | Repairs | Statuts avec badges | **ETU3616** | ✅ Done | 25min | 0 | 100% |
+| 12 | Repairs | Prix en Ariary | **ETU3616** | ✅ Done | 20min | 0 | 100% |
+| 13 | Repairs | Filtres par statut | **ETU3616** | ✅ Done | 30min | 0 | 100% |
+| 14 | Repairs | Ajouter réparation | **ETU3616** | ✅ Done | 35min | 0 | 100% |
+| 15 | Repairs | 8 types réparations BD | **ETU3616** | ✅ Done | 25min | 0 | 100% |
+| 16 | Repairs | Prix estimé automatique | **ETU3616** | ✅ Done | 30min | 0 | 100% |
+| 17 | Repairs | Photos des pannes | **ETU3616** | ⏳ TODO | 120min | 120 | 0% |
+| 18 | Repairs | Détails temps réel | **ETU3616** | ✅ Done | 40min | 0 | 100% |
+| 19 | Repairs | Timeline réparations | **ETU3616** | ✅ Done | 35min | 0 | 100% |
+| 20 | Repairs | Devis PDF | **ETU3616** | ⏳ TODO | 90min | 90 | 0% |
+| 21 | Repairs | Historique complet | **ETU3616** | ⏳ TODO | 60min | 60 | 0% |
 
 ### Paiements (60% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 22 | Payments | Historique paiements | **ETU3637** | ✅ Done | 30min | 0 | 100% |
-| 23 | Payments | Formulaire paiement | **ETU3637** | ✅ Done | 40min | 0 | 100% |
-| 24 | Payments | Intégration Firebase | **ETU3637** | ⏳ TODO | 90min | 90 | 0% |
-| 25 | Payments | Reçus/documents | **ETU3637** | ⏳ TODO | 60min | 60 | 0% |
+| 22 | Payments | Historique paiements | **ETU3603** | ✅ Done | 30min | 0 | 100% |
+| 23 | Payments | Formulaire paiement | **ETU3603** | ✅ Done | 40min | 0 | 100% |
+| 24 | Payments | Intégration Firebase | **ETU3603** | ⏳ TODO | 90min | 90 | 0% |
+| 25 | Payments | Reçus/documents | **ETU3603** | ⏳ TODO | 60min | 60 | 0% |
 
 ### Notifications & Alertes (40% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 26 | Notif | Push notifications | **ETU3637** | ✅ Done | 45min | 0 | 100% |
-| 27 | Notif | Écran notifications | **ETU3637** | ✅ Done | 30min | 0 | 100% |
-| 28 | Notif | Statuts en temps réel | **ETU3637** | ⏳ TODO | 90min | 90 | 0% |
+| 26 | Notif | Push notifications | **ETU3603** | ✅ Done | 45min | 0 | 100% |
+| 27 | Notif | Écran notifications | **ETU3603** | ✅ Done | 30min | 0 | 100% |
+| 28 | Notif | Statuts en temps réel | **ETU3603** | ⏳ TODO | 90min | 90 | 0% |
 
 ### Interface Utilisateur (80% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 29 | UI | Écrans responsive | **ETU3637** | ✅ Done | 60min | 0 | 100% |
-| 30 | UI | Design thématique | **ETU3637** | ✅ Done | 45min | 0 | 100% |
-| 31 | UI | Animations transitions | **ETU3637** | ✅ Done | 50min | 0 | 100% |
-| 32 | UI | Accessibilité (A11y) | **ETU3637** | ⏳ TODO | 40min | 40 | 0% |
+| 29 | UI | Écrans responsive | **ETU3513** | ✅ Done | 60min | 0 | 100% |
+| 30 | UI | Design thématique | **ETU3513** | ✅ Done | 45min | 0 | 100% |
+| 31 | UI | Animations transitions | **ETU3513** | ✅ Done | 50min | 0 | 100% |
+| 32 | UI | Accessibilité (A11y) | **ETU3513** | ⏳ TODO | 40min | 40 | 0% |
 
 ---
 
@@ -79,23 +83,23 @@
 ### Architecture API (90% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 33 | Backend | CRUD Voitures | **ETU3637** | ✅ Done | 60min | 0 | 100% |
-| 34 | Backend | CRUD Réparations | **ETU3637** | ✅ Done | 60min | 0 | 100% |
-| 35 | Backend | CRUD Paiements | **ETU3637** | ✅ Done | 45min | 0 | 100% |
+| 33 | Backend | CRUD Voitures | **ETU3603** | ✅ Done | 60min | 0 | 100% |
+| 34 | Backend | CRUD Réparations | **ETU3616** | ✅ Done | 60min | 0 | 100% |
+| 35 | Backend | CRUD Paiements | **ETU3603** | ✅ Done | 45min | 0 | 100% |
 | 36 | Backend | Modèles Eloquent | **ETU3637** | ✅ Done | 90min | 0 | 100% |
-| 37 | Backend | Relations BD | **ETU3637** | ✅ Done | 75min | 0 | 100% |
+| 37 | Backend | Relations BD | **ETU3513** | ✅ Done | 75min | 0 | 100% |
 | 38 | Backend | Validations métier | **ETU3637** | ✅ Done | 60min | 0 | 100% |
 | 39 | Backend | Authentification Sanctum | **ETU3637** | ✅ Done | 90min | 0 | 100% |
 | 40 | Backend | Autorisation (Policies) | **ETU3637** | ⏳ TODO | 45min | 45 | 0% |
-| 41 | Backend | Pagination/filtering | **ETU3637** | ✅ Done | 40min | 0 | 100% |
+| 41 | Backend | Pagination/filtering | **ETU3603** | ✅ Done | 40min | 0 | 100% |
 
 ### Base de Données (85% ✅)
 | # | Module | Tâche | Assigné | État | Estimation | Reste | % |
 |---|--------|-------|---------|------|------------|-------|---|
-| 42 | DB | Migrations tables | **ETU3637** | ✅ Done | 90min | 0 | 100% |
-| 43 | DB | Factories/Seeders | **ETU3637** | ✅ Done | 60min | 0 | 100% |
-| 44 | DB | Indexes performance | **ETU3637** | ⏳ TODO | 30min | 30 | 0% |
-| 45 | DB | Backups/Snapshots | **ETU3637** | ⏳ TODO | 40min | 40 | 0% |
+| 42 | DB | Migrations tables | **ETU3513** | ✅ Done | 90min | 0 | 100% |
+| 43 | DB | Factories/Seeders | **ETU3513** | ✅ Done | 60min | 0 | 100% |
+| 44 | DB | Indexes performance | **ETU3513** | ⏳ TODO | 30min | 30 | 0% |
+| 45 | DB | Backups/Snapshots | **ETU3513** | ⏳ TODO | 40min | 40 | 0% |
 
 ---
 
@@ -170,13 +174,15 @@ garage-premium-LIVRABLE.zip
 
 ---
 
-## 👤 Équipe
+## � Équipe
 
-| Rôle | Membre | Email | Status |
-|------|--------|-------|--------|
-| Full Stack Dev | ETU3637 | etu3637@example.com | Actif ✅ |
+| Rôle | Membre | Spécialité | Tâches | Status |
+|------|--------|-----------|--------|--------|
+| Lead Developer | **ETU3637** | Authentification & Sécurité | 11 | Actif ✅ |
+| Mobile Developer | **ETU3616** | Gestion Réparations | 12 | Actif ✅ |
+| Backend Developer | **ETU3603** | Paiements & API REST | 11 | Actif ✅ |
+| Frontend Developer | **ETU3513** | UI/UX & Base de Données | 11 | Actif ✅ |
 
 ---
 
-**Dernière mise à jour:** 10 Février 2026
-**Prochaine review:** 12 Février 2026
+**Total Équipe:** 4 développeurs | **Charge Totale:** 45 tâches | **% Avancement Global:** 71%

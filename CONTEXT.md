@@ -1,6 +1,6 @@
 # 📋 CONTEXT.md - Garage Premium Project Reference
 
-**Date:** Février 2026 | **Statut Global:** 92% ✅ | **Équipe:** ETU3637
+**Date:** Février 2026 | **Statut Global:** 92% ✅ | **Équipe:** ETU3637, ETU3616, ETU3603, ETU3513
 
 ---
 
@@ -595,7 +595,87 @@ godot --headless --export-release "HTML5" export/index.html
 
 ## 👤 Responsabilité
 
-**Développeur:** ETU3637  
+## 👥 Équipe de Développement
+
+| Rôle | Étudiant | Spécialité | Contribution |
+|------|----------|-----------|---------------|
+| **Lead Developer** | ETU3637 | Authentification & Sécurité API | 11 tâches - 73% |
+| **Mobile Developer** | ETU3616 | Gestion Réparations Mobile | 12 tâches - 75% |
+| **Backend Developer** | ETU3603 | Paiements & Notifications API | 11 tâches - 73% |
+| **Frontend Developer** | ETU3513 | UI/UX & Base de Données | 11 tâches - 64% |
+
+**Charge Totale:** 45 tâches | **Avancement Moyen:** 71% (32 complétées, 13 TODO)
+
+---
+
+## 📊 Répartition des Tâches
+
+### ETU3637 - Lead Developer (Authentification & Sécurité)
+**Assigné:** 11 tâches | **Complétées:** 8 | **TODO:** 3
+- Authentification mobile (9 tâches): Login, inscription, validation, JWT Sanctum
+- Backend sécurité: Modèles Eloquent, validations métier, Sanctum, Policies
+
+### ETU3616 - Mobile Developer (Réparations)
+**Assigné:** 12 tâches | **Complétées:** 9 | **TODO:** 3  
+- Gestion réparations mobile (12 tâches): Liste, filtres, statuts, pricing, types, timeline, photos, PDF, historique
+- Backend: CRUD Réparations
+
+### ETU3603 - Backend Developer (Paiements & API)
+**Assigné:** 11 tâches | **Complétées:** 8 | **TODO:** 3
+- Paiements mobile (4 tâches): Historique, formulaire, Firebase, reçus
+- Notifications (3 tâches): Push, écran, temps réel
+- Backend: CRUD Voitures, CRUD Paiements, Pagination/filtering
+
+### ETU3513 - Frontend Developer (UI & Database)
+**Assigné:** 11 tâches | **Complétées:** 7 | **TODO:** 4
+- Interface utilisateur mobile (4 tâches): Responsive, design, animations, accessibilité
+- Base de données (4 tâches): Migrations, seeders, indexes, backups
+- Backend: Relations BD
+
+---
+
+## 📋 Protocole de Collaboration
+
+### Communication
+- **Commits:** Messages clairs avec assigné et tâche (#numéroTâche)
+- **Format:** `feat/fix/chore: description - @assigné`
+- **Branches:** Une branche par feature/bugfix
+
+### Synchronisation GitHub
+- Push tous les jours (fin de journée)
+- Pull requests avec review avant merge
+- Main branch: code production
+- Dev branch: intégration continue
+
+### Priorités de Développement
+1. **Critique:** Frontend + API (bloquants pour tests)
+2. **Important:** Paiements + Notifications
+3. **Nice to Have:** Bonus features
+
+---
+
+## 🔧 Stack Technique par Rôle
+
+| Rôle | Frontend | Backend | Mobile | DevOps |
+|------|----------|---------|--------|--------|
+| **ETU3637** | - | PHP/Laravel | TypeScript/React | Docker |
+| **ETU3616** | React/Vite | PHP/Laravel | React Native | - |
+| **ETU3603** | - | PHP/Laravel | Firebase | - |
+| **ETU3513** | React/CSS | MySQL | - | DB |
+
+---
+
+## 📈 Métriques Équipe
+
+| Métrique | Valeur |
+|----------|--------|
+| **Tâches par Personne** | 11-12 (équilibré) |
+| **Chevauchement** | Oui - intégration continue |
+| **Dépendances** | Backend → Frontend/Mobile |
+| **Code Review** | Entre membres |
+| **Tempo Cible** | 8h/jour par personne |
+
+---  
 **Date dernier update:** Février 11, 2026 - 11h30 UTC  
 **Workload actuel:** 55% de 50 tâches
 **Session avancée:** Frontend Web finalisé (Statut 100%)
