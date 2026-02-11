@@ -59,7 +59,7 @@ class SlotGarageController extends Controller
         try {
             $validated = $request->validate([
                 'numero' => ['required', 'integer', 'unique:slots_garage,numero'],
-                'description' => ['nullable', 'string'],
+                'type' => ['required', 'string', 'in:reparation,attente'],
             ]);
 
             $slot = SlotGarage::create($validated);
@@ -94,7 +94,7 @@ class SlotGarageController extends Controller
 
             $validated = $request->validate([
                 'numero' => ['required', 'integer', 'unique:slots_garage,numero,' . $id],
-                'description' => ['nullable', 'string'],
+                'type' => ['required', 'string', 'in:reparation,attente'],
             ]);
 
             $slot->update($validated);

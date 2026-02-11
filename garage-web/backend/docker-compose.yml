@@ -50,10 +50,9 @@ version: '3.8'
 services:
   # PHP-FPM pour Laravel
   app:
-    image: php:8.2-fpm
+    build: .
     container_name: laravel_app
     working_dir: /var/www/html
-    command: sh -c "docker-php-ext-install pdo pdo_mysql && php-fpm"
     volumes:
       - ./:/var/www/html
       - ./docker/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf

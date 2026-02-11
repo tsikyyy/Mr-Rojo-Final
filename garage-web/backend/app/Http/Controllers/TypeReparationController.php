@@ -60,10 +60,16 @@ class TypeReparationController extends Controller
             $validated = $request->validate([
                 'nom' => ['required', 'string', 'unique:types_reparation,nom'],
                 'prix' => ['required', 'numeric', 'min:0'],
-                'description' => ['nullable', 'string'],
+                'duree_secondes' => ['nullable', 'integer', 'min:0'],
             ]);
 
-            $type = TypeReparation::create($validated);
+            $data = $validated;
+            // Default duration to 3600 seconds (1 hour) if not provided
+            if (!isset($data['duree_secondes'])) {
+                $data['duree_secondes'] = 3600;
+            }
+
+            $type = TypeReparation::create($data);
 
             return response()->json([
                 'success' => true,
@@ -96,7 +102,7 @@ class TypeReparationController extends Controller
             $validated = $request->validate([
                 'nom' => ['required', 'string', 'unique:types_reparation,nom,' . $id],
                 'prix' => ['required', 'numeric', 'min:0'],
-                'description' => ['nullable', 'string'],
+                'duree_secondes' => ['nullable', 'integer', 'min:0'],
             ]);
 
             $type->update($validated);

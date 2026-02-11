@@ -70,6 +70,18 @@ class InterventionController extends Controller
                 'date_fin' => ['nullable', 'date_format:Y-m-d H:i:s', 'after_or_equal:date_debut'],
             ]);
 
+            // VERIFICATION REGLE METIER : Max 2 voitures en réparation simultanément
+            if ($validated['statut'] === 'en_reparation') {
+                $countEnReparation = Intervention::where('statut', 'en_reparation')->count();
+                if ($countEnReparation >= 2) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'Le garage est complet (Max 2 voitures en réparation en même temps).',
+                        'errors' => ['statut' => ['Le garage est complet. Veuillez mettre en attente ou terminer une autre intervention.']]
+                    ], 422);
+                }
+            }
+
             $intervention = Intervention::create($validated);
 
             return response()->json([
@@ -100,7 +112,7 @@ class InterventionController extends Controller
         try {
             $intervention = Intervention::findOrFail($id);
 
-            $validated = $request->validate([
+            $validator = \Illuminate\Support\Facades\Validator::make($request->all(), [
                 'voiture_id' => ['required', 'integer', 'exists:voitures,id'],
                 'type_reparation_id' => ['required', 'integer', 'exists:types_reparation,id'],
                 'categorie_id' => ['nullable', 'integer', 'exists:categories,id'],
@@ -109,6 +121,27 @@ class InterventionController extends Controller
                 'date_debut' => ['nullable', 'date_format:Y-m-d H:i:s'],
                 'date_fin' => ['nullable', 'date_format:Y-m-d H:i:s', 'after_or_equal:date_debut'],
             ]);
+
+            if ($validator->fails()) {
+                throw new \Illuminate\Validation\ValidationException($validator);
+            }
+
+            $validated = $validator->validated();
+
+            // VERIFICATION REGLE METIER : Max 2 voitures en réparation simultanément
+            if ($validated['statut'] === 'en_reparation') {
+                $countEnReparation = Intervention::where('statut', 'en_reparation')
+                    ->where('id', '!=', $id)
+                    ->count();
+                
+                if ($countEnReparation >= 2) {
+                    return response()->json([
+                        'success' => false,
+                        'message' => 'Le garage est complet (Max 2 voitures en réparation en même temps).',
+                        'errors' => ['statut' => ['Le garage est complet. Veuillez mettre en attente ou terminer une autre intervention.']]
+                    ], 422);
+                }
+            }
 
             $intervention->update($validated);
 
